@@ -1,12 +1,17 @@
 {
   "expo": {
-    "name": "lesson01",
-    "slug": "lesson01",
+    "name": "CoffeeShop",
+    "slug": "CoffeeShop",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/coffee-icon.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/coffee-splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#000000"    
+    },
     "newArchEnabled": true,
     "ios": {
       "supportsTablet": true
@@ -27,10 +32,9 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
-          "imageWidth": 200,
-          "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
+          "image": "./assets/images/coffee-splash.png",
+          "resizeMode": "cover",
+          "backgroundColor": "#000000"
         }
       ]
     ],
