@@ -14,7 +14,7 @@ export default function MenuScreen() {
 
     const separatorComponent = () => <View style={styles.separator} />;
 
-    const footerComponent = () => <Text>End of Menu</Text>
+    const footerComponent = () => <Text style={{ color: theme.text}}>End of Menu</Text>
 
     return (
         <Container>
@@ -32,8 +32,8 @@ export default function MenuScreen() {
                         <View style={styles.menuTextRow}>
                             <Text style={[styles.menuItemTitle, styles.menuItemText]}>{item.title}</Text>
                             <Text style={styles.menuItemText}>{item.description}</Text>
-                            <Image source={MENU_IMAGES[item.id - 1]} style={styles.menuImage} />
                         </View>
+                        <Image source={MENU_IMAGES[item.id - 1]} style={styles.menuImage} />
                     </View>
                 )}
             />
